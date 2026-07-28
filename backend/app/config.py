@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     openai_api_key: str | None = None
     openai_model: str = "gpt-4o-mini"
 
-    # Local clone of https://github.com/linikerunk/skill-repo
+    # Path to the skills-repo folder (SRE skills/runbooks), relative to the backend dir
     skills_repo_path: str = "skills-repo"
 
     class Config:

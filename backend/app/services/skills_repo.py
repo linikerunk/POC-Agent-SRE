@@ -1,5 +1,5 @@
-"""Loads SRE "skills" (known failure patterns + runbooks) from the local
-clone of the skill-repo (https://github.com/linikerunk/skill-repo).
+"""Loads SRE "skills" (known failure patterns + runbooks) from the
+skills-repo/ folder.
 
 Each skill is a Markdown file with YAML front matter — see
 skills-repo/README.md for the schema.

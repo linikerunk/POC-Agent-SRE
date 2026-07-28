@@ -220,7 +220,6 @@ def apply_k8s_file(k8s_config_file_path: str) -> bool:
 
         pid = process.pid
         stdout, stderr = process.communicate()
-        # TODO: apurar falha no kubectl
         
         return True
     except Exception as erro:
@@ -264,12 +263,8 @@ def perform_k8s_deployment(
             if generated:
                 apply_k8s_file(path)
                 generate_files.append(path)
-        # TODO: informar sucesso da implantacao
         
     except Exception as erro:
         for generate_file_path in generate_files:
             import os
             os.remove(generate_file_path)
-        # TODO: informar falha da implantacao
-
-# aplicar arquivos de implantacao
